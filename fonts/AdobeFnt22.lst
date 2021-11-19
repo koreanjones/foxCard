@@ -1,0 +1,116 @@
+%!Adobe-FontList 1.22
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/vincent.smith/Desktop/Fox Holiday 2021/Holiday_2021_card_final2/Document fonts/AdobeFnt22.lst
+FileLength:2422
+FileModTime:658703291
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:COLOMBOSROUGH2
+FamilyName:COLOMBOS ROUGH 2
+StyleName:Regular
+MenuName:COLOMBOS ROUGH 2
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:COLOMBOS ROUGH 2
+WritingScript:Roman
+OutlineFileName:/Users/vincent.smith/Desktop/Fox Holiday 2021/Holiday_2021_card_final2/Document fonts/COLOMBOS ROUGH 2.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:826520
+FileModTime:548541330
+NameArray:0,Mac,4,COLOMBOS ROUGH 2
+NameArray:0,Win,1,COLOMBOS ROUGH 2
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+MenuName:Minion Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro
+WritingScript:Roman
+OutlineFileName:/Users/vincent.smith/Desktop/Fox Holiday 2021/Holiday_2021_card_final2/Document fonts/MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:218640
+FileModTime:657155976
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:URWDIN-Demi
+FamilyName:URW DIN
+StyleName:Demi
+MenuName:URW DIN Demi
+StyleBits:0
+WeightClass:600
+WidthClass:5
+AngleClass:0
+FullName:URW DIN Demi
+WritingScript:Roman
+OutlineFileName:/Users/vincent.smith/Desktop/Fox Holiday 2021/Holiday_2021_card_final2/Document fonts/URW++ - URWDIN-Demi.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:98384
+FileModTime:569542068
+NameArray:0,Mac,18,URW DIN Demi
+NameArray:0,Mac,4,URW DIN Demi
+NameArray:0,Win,1,URW DIN Demi
+NameArray:0,Win,16,URW DIN
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:URWDIN-Regular
+FamilyName:URW DIN
+StyleName:Regular
+MenuName:URW DIN
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:URW DIN
+WritingScript:Roman
+OutlineFileName:/Users/vincent.smith/Desktop/Fox Holiday 2021/Holiday_2021_card_final2/Document fonts/URW++ - URWDIN-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:96644
+FileModTime:569542068
+NameArray:0,Mac,18,URW DIN
+NameArray:0,Mac,4,URW DIN
+NameArray:0,Win,1,URW DIN
+NameArray:0,Win,16,URW DIN
+%EndFont
+

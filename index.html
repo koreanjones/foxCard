@@ -11,21 +11,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <title>Document</title>
     <style>
-        body{
-            background-color: red;
+        @font-face {
+        font-family: "ColumbusRough2";
+        src: url("./fonts/COLOMBOS\ ROUGH\ 2.otf") format("opentype")
+        }
+        body{   
+            background-image: url('./Holiday_2021_card_background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            height:100vh;
+            margin: 0;
+            text-align: center;
+
+        }
+        h1 {
+            font-family: 'ColumbusRough2', Arial, sans-serif;
+            font-weight:normal;
+            font-style:normal;
+        }
+        .title {
+            margin-top:20%
         }
         #form{
             padding-bottom: 30px;
         }
         #gift-container{
-            background: cornsilk;
             padding-top: 30px;
             display: none;
             border-radius: 10px;
         }
         .image-square{
             padding:0;
-            margin-top: 20px
+            margin-top: 20px;
+            background: cornsilk;
+            border-radius: 5px;
         }
         .image-square:hover{
             border: 5px solid rgb(1,254,3);
@@ -48,12 +68,14 @@
         }
         .gift-text {
             background: rgba(41, 42, 41, 0.2);
-            border: 1px solid rgb(1,254,3);
             text-align: center;
             border-radius: 5px;
         }
         h1 {
             margin-left: 5%;
+        }
+        .title{
+            font-size: 14em;
         }
         h4{
             margin-top: 4%;
@@ -67,146 +89,158 @@
         }
     </style>
 </head>
-<body> 
-    <div class="container">
-        <button onClick="openForm()">Click ME</button>
-    </div>
-    
-<div class="container" id="gift-container">
-    <h1 style="font-size: 3.5em;">Wishing you a wonderful holiday season and Happy New Year.</h1>
+<body>
 
-
-    <h4 style: >Select a gift <strong>OR</strong> charity organization for FOX to donate $100 on your behalf.</h4>
-
-    <h4 style="margin-bottom: 4%;">Choose from the folowing options:</h4>
-    <form id="form">
-        <div class="row d-flex justify-content-around">
-            <div class="col-md-3 image-square">
-                <label class="label" for="gift-image1">
-                    <input id="gift-item"class="image-responsive gift-item" type="image" value="100" src="foximages/AlwaysPan_BlueSalt_1_1000x.png" name="submit">
-                    <h2 class="gift-text">Pan</h2>
-                </label>
+        <div class="container col align-self-center" id='main-page'>
+            <div class="container">
+                <h1 class="title" >'TIS THE SEASON</h1>
+                <h5>Wishing you and your loved 
+                    ones a joyous holiday!</h5>
             </div>
-            <div class="col-md-3 image-square">
-                <label class="label" for="gift-image2">
-                    <input id="gift-item" class="image-responsive gift-item" type="image" value="2" src="foximages/411auto_gallery_notext_hero.webp" name="submit">
-                    <h2 class="gift-text">Speaker</h2>
-                </label>
-            </div>
-            <div class="col-md-3 image-square">
-                <label class="label" for="gift-image3">
-                    <input id="gift-item" class="image-responsive gift-item" type="image" value="3" src="foximages/ember_black_CM214_600x.jpg" name="submit">
-                    <h2 class="gift-text">Cup</h2>
-                </label>
+            
+            <div class="container-fluid justify-content-center align-items-center">
+                <button class="btn btn-success"onClick="openForm()" id="gift-button">Select a Gift</button>
             </div>
         </div>
-        <div class="row d-flex justify-content-around">
-            <div class="col-md-3 image-square">
-                <label class="label" for="gift-image4">
-                    <input class="image-responsive charity-item" type="image" value="4" src="foximages/ACS_Logo_1_nobackground[1].png" name="submit">
-                    <h2 class="gift-text">Angel City Sports</h2>
-                </label>
-            </div>
-            <div class="col-md-3 image-square">
-                <label class="label" for="gift-image5">
-                    <input class="image-responsive charity-item" type="image" value="5" src="foximages/NATL_Rev_Logo_L-270[1].png" name="submit" style="background-color: grey;">
-                    <h2 class="gift-text">U.S.Vets</h2>
-                </label>
-            </div>
-            <div class="col-md-3 image-square">
-                <label class="label" for="gift-image7">
-                    <input class="image-responsive charity-item" type="image" value="6" src="foximages/redcross-logo.png.img[1].png" name="submit">
-                    <h3 class="gift-text">American Red Cross</h3>
-                </label>
-            </div>
-        </div>
-    </form>
+        
+        
+    <div class="container" id="gift-container">
     
-      
-
-</div>
-    <div class="container col-5" id="itemInfoContainer" style="background: cornsilk; display:none">
-        <form class="">
-            <fieldset>
-                <div class="form-group">
-                    <label class="col-form-label mt-4" for="inputValue">Selected Item Value  (this will be hidden)</label>
-                    <input type="text" class="form-control" placeholder="" id="inputValue">
+        <h1 style="font-size: 3.5em;">Wishing you a wonderful holiday season and Happy New Year.</h1>
+    
+    
+        <h4 style: >Select a gift <strong>OR</strong> charity organization for FOX to donate $100 on your behalf.</h4>
+    
+        <h4 style="margin-bottom: 4%;">Choose from the folowing options:</h4>
+        <form id="form">
+            <div class="row d-flex justify-content-around">
+                <div class="col-md-3 image-square">
+                    <label class="label" for="gift-image1">
+                        <input id="gift-item"class="image-responsive gift-item" type="image" value="100" src="foximages/AlwaysPan_BlueSalt_1_1000x.png" name="submit">
+                        <h2 class="gift-text">Pan</h2>
+                    </label>
                 </div>
+                <div class="col-md-3 image-square">
+                    <label class="label" for="gift-image2">
+                        <input id="gift-item" class="image-responsive gift-item" type="image" value="2" src="foximages/411auto_gallery_notext_hero.webp" name="submit">
+                        <h2 class="gift-text">Speaker</h2>
+                    </label>
+                </div>
+                <div class="col-md-3 image-square">
+                    <label class="label" for="gift-image3">
+                        <input id="gift-item" class="image-responsive gift-item" type="image" value="3" src="foximages/ember_black_CM214_600x.jpg" name="submit">
+                        <h2 class="gift-text">Cup</h2>
+                    </label>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around">
+                <div class="col-md-3 image-square">
+                    <label class="label" for="gift-image4">
+                        <input class="image-responsive charity-item" type="image" value="4" src="foximages/ACS_Logo_1_nobackground[1].png" name="submit">
+                        <h2 class="gift-text">Angel City Sports</h2>
+                    </label>
+                </div>
+                <div class="col-md-3 image-square">
+                    <label class="label" for="gift-image5">
+                        <input class="image-responsive charity-item" type="image" value="5" src="foximages/NATL_Rev_Logo_L-270[1].png" name="submit" style="background-color: grey;">
+                        <h2 class="gift-text">U.S.Vets</h2>
+                    </label>
+                </div>
+                <div class="col-md-3 image-square">
+                    <label class="label" for="gift-image7">
+                        <input class="image-responsive charity-item" type="image" value="6" src="foximages/redcross-logo.png.img[1].png" name="submit">
+                        <h3 class="gift-text">American Red Cross</h3>
+                    </label>
+                </div>
+            </div>
+        </form>
+        
+          
+    
+    </div>
+        <div class="container col-5" id="itemInfoContainer" style="background: cornsilk; margin-top:20px; display:none">
+            <form class="">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="col-form-label mt-4" for="inputValue">Selected Item Value  (this will be hidden)</label>
+                        <input type="text" class="form-control" placeholder="" id="inputValue">
+                    </div>
+                        <div class="form-group">
+                            <label class="col-form-label mt-4" for="inputDefault">First Name</label>
+                            <input type="text" class="form-control " placeholder="First" id="inputDefault">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label mt-4" for="inputDefault">Last Name</label>
+                            <input type="text" class="form-control " placeholder="Last" id="inputDefault">
+                        </div> 
+                    
+                         
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                  <div class="form-group">
+                    <label class="col-form-label mt-4" for="inputDefault">Address</label>
+                    <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label mt-4" for="inputDefault">Address 2</label>
+                    <input type="text" class="form-control" placeholder="Number/Apt./Add Info" id="inputDefault">
+                </div>
+                <div class="">
+                    <div class="form-group">
+                        <label class="col-form-label mt-4" for="inputDefault">City</label>
+                        <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label mt-4" for="inputDefault">State</label>
+                        <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label mt-4" for="inputDefault">Zip</label>
+                        <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="col-form-label mt-4" for="inputDefault">Phone Number</label>
+                    <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
+                </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea" class="form-label mt-4">Example textarea</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
+              </form>
+        </div>
+    
+        <div class="container col-5" id="charityInfoContainer" style="background: cornsilk; margin-top:20px; display:none">
+            <form class="">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="col-form-label mt-4" for="inputValue2">value from item  (this will be hidden)</label>
+                        <input type="text" class="form-control" placeholder="" id="inputValue2">
+                    </div>
                     <div class="form-group">
                         <label class="col-form-label mt-4" for="inputDefault">First Name</label>
-                        <input type="text" class="form-control " placeholder="First" id="inputDefault">
+                        <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
                     </div>
                     <div class="form-group">
                         <label class="col-form-label mt-4" for="inputDefault">Last Name</label>
-                        <input type="text" class="form-control " placeholder="Last" id="inputDefault">
-                    </div> 
-                
-                     
-                <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
+                    </div>
+                  <div class="form-group">
                     <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-              <div class="form-group">
-                <label class="col-form-label mt-4" for="inputDefault">Address</label>
-                <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
-            </div>
-            <div class="form-group">
-                <label class="col-form-label mt-4" for="inputDefault">Address 2</label>
-                <input type="text" class="form-control" placeholder="Number/Apt./Add Info" id="inputDefault">
-            </div>
-            <div class="">
-                <div class="form-group">
-                    <label class="col-form-label mt-4" for="inputDefault">City</label>
-                    <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
-                </div>
-                <div class="form-group">
-                    <label class="col-form-label mt-4" for="inputDefault">State</label>
-                    <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
-                </div>
-                <div class="form-group">
-                    <label class="col-form-label mt-4" for="inputDefault">Zip</label>
-                    <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
-                </div>
-            </div>
-            
-            <div class="form-group">
-                <label class="col-form-label mt-4" for="inputDefault">Phone Number</label>
-                <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
-            </div>
-              <div class="form-group">
-                <label for="exampleTextarea" class="form-label mt-4">Example textarea</label>
-                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </fieldset>
-          </form>
-    </div>
-
-    <div class="container col-5" id="charityInfoContainer" style="background: cornsilk; display:none">
-        <form class="">
-            <fieldset>
-                <div class="form-group">
-                    <label class="col-form-label mt-4" for="inputValue2">value from item  (this will be hidden)</label>
-                    <input type="text" class="form-control" placeholder="" id="inputValue2">
-                </div>
-                <div class="form-group">
-                    <label class="col-form-label mt-4" for="inputDefault">First Name</label>
-                    <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
-                </div>
-                <div class="form-group">
-                    <label class="col-form-label mt-4" for="inputDefault">Last Name</label>
-                    <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
-                </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </fieldset>
-          </form>
-    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
+              </form>
+        </div>
+    
 <!-- Optional JavaScript -->
 <script>
 
@@ -214,6 +248,7 @@
 var form = document.getElementById('form');
 
 function openForm(){
+document.getElementById("main-page").style.display = 'none';
 document.getElementById("gift-container").style.display = 'block';
 document.getElementById('charityInfoContainer').style.display = 'none';
 document.getElementById('itemInfoContainer').style.display = 'none';
