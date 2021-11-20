@@ -51,6 +51,33 @@
             border-radius: 5px;
             box-shadow: 10px 10px 50px 5px black;
         }
+        #cityImageContainer{
+            height: 67%;
+        }
+        #vetImageContainer{
+            height:65%;
+            background-color:grey
+        }
+        #redImageContainer{
+            height:65%;
+        }
+        #cityImage{
+            margin-top:3%;
+            margin-left: 5%;
+            height:80%;
+            width:90%;
+        }
+        #vetsImage{
+            height:80%;
+            width:100%;
+            border-radius: 5px;
+
+        }
+        #redCrossImage{
+            margin-top: 15%;
+            height:50%;
+            width:98%;
+        }
         .image-square:hover{
             border: 5px solid rgb(1,254,3);
             padding:0;
@@ -104,7 +131,7 @@
             <div class="row d-flex justify-content-around">
                 <div class="col-sm-3 image-square">
                     <label class="label" for="gift-image1">
-                        <input id="gift-item"class="image-responsive gift-item" type="image" value="100" src="foximages/AlwaysPan_BlueSalt_1_1000x.png" name="submit">
+                        <input id="gift-item" class="image-responsive gift-item" type="image" value="1" src="foximages/AlwaysPan_BlueSalt_1_1000x.png" name="submit">
                         <h2 class="gift-text">Pan</h2>
                     </label>
                 </div>
@@ -122,22 +149,22 @@
                 </div>
             </div>
             <div class="row d-flex justify-content-around">
-                <div class="col-sm-3 image-square">
+                <div class="col-sm-3 image-square" id="cityImageContainer">
                     <label class="label" for="gift-image4">
-                        <input class="image-responsive charity-item" type="image" value="4" src="foximages/ACS_Logo_1_nobackground[1].png" name="submit">
-                        <h2 class="gift-text">Angel City Sports</h2>
+                        <input class="image-responsive charity-item" type="image" id="cityImage" value="4" src="foximages/ACS_Logo_1_nobackground[1].png" name="submit">
+                        
                     </label>
                 </div>
-                <div class="col-sm-3 image-square">
+                <div class="col-sm-3 image-square" id="vetImageContainer">
                     <label class="label" for="gift-image5">
-                        <input class="image-responsive charity-item" type="image" value="5" src="foximages/NATL_Rev_Logo_L-270[1].png" name="submit" style="background-color: grey;">
-                        <h2 class="gift-text">U.S.Vets</h2>
+                        <input class="image-responsive charity-item" type="image" id="vetsImage" value="5" src="foximages/NATL_Rev_Logo_L-270[1].png" name="submit" style="background-color: grey;">
+                        
                     </label>
                 </div>
-                <div class="col-sm-3 image-square">
+                <div class="col-sm-3 image-square" id="redImageContainer">
                     <label class="label" for="gift-image7">
-                        <input class="image-responsive charity-item" type="image" value="6" src="foximages/redcross-logo.png.img[1].png" name="submit">
-                        <h3 class="gift-text">American Red Cross</h3>
+                        <input class="image-responsive charity-item" type="image" id="redCrossImage" value="6" src="foximages/redcross-logo.png.img[1].png" name="submit">
+                        
                     </label>
                 </div>
             </div>
