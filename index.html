@@ -25,13 +25,41 @@
             font-weight:normal;
             font-style:normal;
             color:white;
+            margin-bottom: 5%
         }
-        h4 {
+        h5 {text-align: center;
             font-family: 'UrwDinDemi', Arial, sans-serif;
             font-weight:normal;
             font-style:normal;
-            color:white
-            
+            color:white;
+            font-size:medium;    
+        }
+        h3 {text-align: center;
+            font-family: 'UrwDinDemi', Arial, sans-serif;
+            font-weight:normal;
+            font-style:normal;
+            color:white;
+            font-size:medium;    
+        }
+        p{
+            font-family: 'UrwDinDemi', Arial, sans-serif;
+            font-weight:normal;
+            font-style:normal;
+            padding: 3%
+        }
+      
+        .top-p{
+            margin-left: 5%;
+            background-color: white;
+            font-size: small;
+            height:50%;
+            width: 50%
+        }
+        .bottom-p{
+            background-color: white;
+            border: 2px solid  #ad201d;
+            font-size: small;
+            height:50%;
         }
         #form{
             padding-bottom: 30px;
@@ -43,50 +71,44 @@
             background-repeat: no-repeat;
             padding-top: 30px;
             border-radius: 10px;
+            height: 1100px
         }
         .image-square{
             padding:0;
             margin-top: 20px;
-            background: cornsilk;
-            border-radius: 5px;
+            background: #ad201d;
             box-shadow: 10px 10px 50px 5px black;
-        }
-        #cityImageContainer{
-            height: 67%;
+            height: 70%;
         }
         #vetImageContainer{
-            height:65%;
-            background-color:grey
-        }
-        #redImageContainer{
-            height:65%;
+            background-color: #ad201d;
+
         }
         #cityImage{
-            margin-top:10%;
-            margin-left: 5%;
-            height:60%;
-            width:90%;
+            margin-left: 30%;
+            height:20%;
+            width:30%;
         }
         #vetsImage{
-            margin-top:5%;
-            height:70%;
-            width:100%;
-            border-radius: 5px;
+            margin-left: 30%;
+            height:20%;
+            width: 50%;
 
         }
         #redCrossImage{
-            margin-top: 15%;
-            height:50%;
-            width:98%;
+            margin-top: 2%;
+            margin-left: 30%;
+            height:20%;
+            width:50%;
         }
         .image-square:hover{
-            border: 5px solid rgb(1,254,3);
+            border: 5px solid rgb(10, 124, 10);
             padding:0;
-            border-radius: 5px;
         }
         .row{
             margin-bottom: 50px;
-            height:270px
+            height:200px;
+            padding: 5px;
 
         }
         .label{
@@ -95,8 +117,9 @@
             
         }
         .image-responsive{
-           height:100%;
-            width:100%
+            background-color: white;
+            height:50%;
+            width:40%
         }
         .gift-text {
             background: rgba(41, 42, 41, 0.2);
@@ -106,8 +129,7 @@
         .title{
             font-size: 14em;
         }
-        h4{
-            margin-top: 4%;
+        h5{
             margin-left: 5%;
         }
         #itemInfoContainer {
@@ -123,53 +145,63 @@
     <div class="container" id="gift-container">
     
         <div class="container col-11">
-            <h1 style="font-size: 3.5em;">Wishing you a wonderful holiday season and Happy New Year.</h1>
-            <h4 style: >Select a gift <strong>OR</strong> charity organization for FOX to donate $100 on your behalf.</h4>
-            <h4 style="margin-bottom: 4%;">Choose from the folowing options:</h4>
+            <h1 style="font-size: 2.5em;">Wishing you a wonderful holiday season and Happy New Year.</h1>
+            <h5 style: >Select a gift <strong>OR</strong> charity organization for FOX to donate $100 on your behalf.</h5>
+            <h5 >Choose from the folowing options:</h5>
         </div>
-        
-        <form id="form">
-            <div class="row d-flex justify-content-around">
+            <div class="row justify-content-center">
                 <div class="col-sm-3 image-square">
                     <label class="label" for="gift-image1">
-                        <input id="gift-item" class="image-responsive gift-item" type="image" value="1" src="foximages/AlwaysPan_BlueSalt_1_1000x.png" name="submit">
-                        <h2 class="gift-text">Pan</h2>
+                        <h3>Blue Air</h3>
+                        <div class="row">
+                            <p class="top-p">Blue Air purifier</p>
+                            <input id="gift-item" class="image-responsive gift-item" type="image" value="1" src="foximages/411auto_gallery_notext_hero.webp" name="submit">
+                        </div>   
                     </label>
                 </div>
-                <div class="col-sm-3 image-square">
+                <div class="col-sm-3 offset-sm-1 image-square">
                     <label class="label" for="gift-image2">
-                        <input id="gift-item" class="image-responsive gift-item" type="image" value="2" src="foximages/411auto_gallery_notext_hero.webp" name="submit">
-                        <h2 class="gift-text">Speaker</h2>
+                        <h3>Always PAn</h3>
+                        <div class="row">
+                            <p class="top-p">AwaysPan <br> the cult favorite do-it-all pan</p>
+                            <input id="gift-item" class="image-responsive gift-item" type="image" value="2" src="foximages/AlwaysPan_BlueSalt_1_1000x.png" name="submit">
+                        </div>
+                        
                     </label>
                 </div>
-                <div class="col-sm-3 image-square">
+                <div class="col-sm-3  offset-sm-1 image-square">
                     <label class="label" for="gift-image3">
-                        <input id="gift-item" class="image-responsive gift-item" type="image" value="3" src="foximages/ember_black_CM214_600x.jpg" name="submit">
-                        <h2 class="gift-text">Cup</h2>
+                        <h3>Ember</h3>
+                        <div class="row" >
+                            <p class="top-p">Ember Mug <br> Smart mug to keep your coffee piping hot</p>
+                            <input id="gift-item" class="image-responsive gift-item" type="image" value="3" src="foximages/ember_black_CM214_600x.jpg" name="submit">
+                        </div>
                     </label>
-                </div>
             </div>
-            <div class="row d-flex justify-content-around">
                 <div class="col-sm-3 image-square" id="cityImageContainer">
                     <label class="label" for="gift-image4">
                         <input class="image-responsive charity-item" type="image" id="cityImage" value="4" src="foximages/ACS_Logo_1_nobackground[1].png" name="submit">
-                        
+                        <p class="bottom-p">Angel city provide year-round free adaptive sports oppertunities for kids, adults, and veterans with physical disabilities or visual impairements.
+                        </p>
                     </label>
                 </div>
-                <div class="col-sm-3 image-square" id="vetImageContainer">
+                <div class="col-sm-3 offset-sm-1 image-square" id="vetImageContainer">
                     <label class="label" for="gift-image5">
-                        <input class="image-responsive charity-item" type="image" id="vetsImage" value="5" src="foximages/NATL_Rev_Logo_L-270[1].png" name="submit" style="background-color: grey;">
-                        
+                        <input class="image-responsive charity-item" type="image" id="vetsImage" value="5" src="foximages/NATL_Rev_Logo_L-270[1].png" name="submit" style="background-color:#ad201d;
+                        ;">
+                        <p class="bottom-p">U.S.VETS is on a mission to end veteran homelessness in the United States.
+                        </p>
                     </label>
                 </div>
-                <div class="col-sm-3 image-square" id="redImageContainer">
+                <div class="col-sm-3 offset-sm-1 image-square" id="redImageContainer">
                     <label class="label" for="gift-image7">
                         <input class="image-responsive charity-item" type="image" id="redCrossImage" value="6" src="foximages/redcross-logo.png.img[1].png" name="submit">
-                        
+                        <p class="bottom-p">The American Red Cross prevents and alleviates human suffering in the face of emergencies
+                        </p>
                     </label>
                 </div>
             </div>
-        </form>
+
         
           
     
